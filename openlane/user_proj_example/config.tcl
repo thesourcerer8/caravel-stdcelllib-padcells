@@ -6,6 +6,13 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \
 	$script_dir/../../verilog/rtl/user_proj_example.v"
 
+
+# Adding the standard cells into OpenLane:
+set ::env(EXTRA_LEFS) [glob $script_dir/../../cells/lef/*.lef]
+set lefs [glob $script_dir/../../cells/lef/*.lef]
+add_lefs -src $lefs
+
+
 set ::env(CLOCK_NET) "counter.clk"
 set ::env(CLOCK_PERIOD) "10"
 
