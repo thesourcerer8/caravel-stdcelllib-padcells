@@ -1,3 +1,6 @@
+#!/usr/bin/perl -w
+
+print <<EOF
 `default_nettype none
 
 /*
@@ -42,77 +45,45 @@ module user_proj_example #(
     output [`MPRJ_IO_PADS-1:0] io_oeb
 );
 
-AND2X1 AND2X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .B(io_in[0]),
-  .A(io_in[1]),
-  .Y(io_out[2]),
-);
-AND2X2 AND2X2(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .B(io_in[3]),
-  .A(io_in[4]),
-  .Y(io_out[5]),
-);
-AOI21X1 AOI21X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .C(io_in[6]),
-  .B(io_in[7]),
-  .A(io_in[8]),
-  .Y(io_out[9]),
-);
-BUFX2 BUFX2(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .A(io_in[10]),
-  .Y(io_out[11]),
-);
-INV INV(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .A(io_in[12]),
-  .Y(io_out[13]),
-);
-INVX1 INVX1(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .A(io_in[14]),
-  .Y(io_out[15]),
-);
-INVX2 INVX2(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .A(io_in[16]),
-  .Y(io_out[17]),
-);
-INVX4 INVX4(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .A(io_in[18]),
-  .Y(io_out[19]),
-);
-NOR2X1 NOR2X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .B(io_in[20]),
-  .A(io_in[21]),
-  .Y(io_out[22]),
-);
-OR2X1 OR2X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .B(io_in[23]),
-  .A(io_in[24]),
-  .Y(io_out[25]),
-);
-OR2X2 OR2X2(
-  .vdd(vdda1),
-  .gnd(vssa1),
-  .B(io_in[26]),
-  .A(io_in[27]),
-  .Y(io_out[28]),
-);
-endmodule
+EOF
+;
+
+
+our $nextla=0;
+our $nextio=0;
+
+foreach my $mag(</home/philipp/libresilicon/StdCellLib/Catalog/*.mag>)
+{
+  next if((-s $mag)<=50);
+  #print `ls -la $mag`;
+  my $cell=$mag; $cell=~s/\.mag$/.cell/;
+  my $name=""; $name=$1 if($mag=~m/([\w\-\.]+)\.mag$/);
+  open CELL,"<$cell";
+  print "$name $name(\n";
+  print "  \.vdd(vdda1),\n"; # ??? Should we do 3.3V or 1.8V ?
+  print "  \.gnd(vssa1),\n";
+
+
+  while(<CELL>)
+  {
+    if(m/^\.inputs (.*)/)
+    {
+      foreach my $inp(split " ",$1)
+      {
+        my $io=$nextio++;
+	print "  \.$inp(io_in[$io]),\n";
+      }
+    }
+    if(m/^\.outputs (.*)/)
+    {
+      foreach my $outp(split " ",$1)
+      {
+        my $io=$nextio++;
+	print "  \.$outp(io_out[$io]),\n";
+      }
+    }
+
+  }
+  print ");\n";
+}
+print "endmodule\n";
