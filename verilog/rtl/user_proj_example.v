@@ -42,74 +42,74 @@ module user_proj_example #(
 );
 
 AND2X1 AND2X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .B(io_in[0]),
   .A(io_in[1]),
   .Y(io_out[2]),
 );
 AND2X2 AND2X2(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .B(io_in[3]),
   .A(io_in[4]),
   .Y(io_out[5]),
 );
 AOI21X1 AOI21X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .C(io_in[6]),
   .B(io_in[7]),
   .A(io_in[8]),
   .Y(io_out[9]),
 );
 BUFX2 BUFX2(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .A(io_in[10]),
   .Y(io_out[11]),
 );
 INV INV(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .A(io_in[12]),
   .Y(io_out[13]),
 );
 INVX1 INVX1(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .A(io_in[14]),
   .Y(io_out[15]),
 );
 INVX2 INVX2(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .A(io_in[16]),
   .Y(io_out[17]),
 );
 INVX4 INVX4(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .A(io_in[18]),
   .Y(io_out[19]),
 );
 NOR2X1 NOR2X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .B(io_in[20]),
   .A(io_in[21]),
   .Y(io_out[22]),
 );
 OR2X1 OR2X1(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .B(io_in[23]),
   .A(io_in[24]),
   .Y(io_out[25]),
 );
 OR2X2 OR2X2(
-  .vdd(vdda1),
-  .gnd(vssa1),
+  .vdd(vccd1),
+  .gnd(vssd1),
   .B(io_in[26]),
   .A(io_in[27]),
   .Y(io_out[28]),
