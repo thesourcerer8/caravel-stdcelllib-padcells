@@ -60,8 +60,8 @@ foreach my $mag(</home/philipp/libresilicon/StdCellLib/Catalog/*.mag>)
   my $name=""; $name=$1 if($mag=~m/([\w\-\.]+)\.mag$/);
   open CELL,"<$cell";
   print "$name $name(\n";
-  print "  \.vdd(vdda1),\n"; # ??? Should we do 3.3V or 1.8V ?
-  print "  \.gnd(vssa1),\n";
+  print "  \.vdd(vccd1),\n"; # ??? Should we do 3.3V or 1.8V ?
+  print "  \.gnd(vssd1),\n";
 
 
   while(<CELL>)
