@@ -115,3 +115,4 @@ OR2X2 OR2X2(
   .Y(io_out[28]),
 );
 endmodule
+`default_nettype wire
