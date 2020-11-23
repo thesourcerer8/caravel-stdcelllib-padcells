@@ -4,6 +4,7 @@ CLEAN = $(foreach block,$(BLOCKS), clean-$(block))
 
 OPENLANE_IMAGE_NAME ?= openlane:rc4
 OPENLANE_BASIC_COMMAND = "cd /project/openlane && flow.tcl -design ./$* -save_path .. -save -tag $* -overwrite"
+OPENLANE_SHELL_COMMAND = "cd /project/openlane && flow.tcl -design ./user_proj_example -save_path .. -save -tag user_proj_example -overwrite"
 OPENLANE_INTERACTIVE_COMMAND = "cd /project/openlane && flow.tcl -it -file ./$*/interactive.tcl"
 
 all: $(BLOCKS)
@@ -39,6 +40,16 @@ endif
 		-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
 		$(OPENLANE_IMAGE_NAME) sh -c $(OPENLANE_BASIC_COMMAND);\
 	fi
+
+
+shell:
+	@echo $(OPENLANE_SHELL_COMMAND)
+	docker run -it -v $(OPENLANE_ROOT):/openLANE_flow \
+	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-v $(PWD)/..:/project \
+	-e PDK_ROOT=$(PDK_ROOT) \
+	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+	$(OPENLANE_IMAGE_NAME) sh ;\
 
 
 FORCE:
