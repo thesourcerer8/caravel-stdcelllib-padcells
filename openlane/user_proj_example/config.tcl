@@ -26,8 +26,8 @@ set ::env(VERILOG_FILES_BLACKBOX) "$verilog_root/rtl/user_proj_cells.v"
 	
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
-set ::env(CLOCK_NET) "counter.clk"
-set ::env(CLOCK_PERIOD) "10"
+#set ::env(CLOCK_NET) "counter.clk"
+#set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 250 250"
@@ -40,3 +40,6 @@ set ::env(FP_PDN_VOFFSET) 4
 set ::env(FP_PDN_VPITCH) 15
 set ::env(FP_PDN_HOFFSET) 4
 set ::env(FP_PDN_HPITCH) 15
+
+set ::env(CLOCK_PERIOD) 0
+set ::env(CLOCK_TREE_SYNTH) 0
