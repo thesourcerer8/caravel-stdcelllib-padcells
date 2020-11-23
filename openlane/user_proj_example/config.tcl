@@ -8,6 +8,7 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/user_proj_cells.v"
 
 
+
 set verilog_root $script_dir/../../verilog/
 set lef_root $script_dir/../../cells/lef/
 set gds_root $script_dir/../../cells/gds/
@@ -31,4 +32,11 @@ set ::env(CLOCK_PERIOD) "10"
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 250 250"
 set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.15
+#set ::env(PL_TARGET_DENSITY) 0.15
+set ::env(FP_CORE_UTIL) 5
+set ::env(PL_TARGET_DENSITY) 0.5
+
+set ::env(FP_PDN_VOFFSET) 4
+set ::env(FP_PDN_VPITCH) 15
+set ::env(FP_PDN_HOFFSET) 4
+set ::env(FP_PDN_HPITCH) 15
