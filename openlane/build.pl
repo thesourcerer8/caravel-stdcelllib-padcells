@@ -8,10 +8,11 @@ print OUT "<html><body>";
 
 print OUT "<h1>Reports:</h1><br/>";
 
-foreach(<*>)
+foreach(scalar(@ARGV) ? @ARGV : <*>)
 {
   next unless(-d $_);
   print "$_\n";
+
   print OUT "<h2>Submodule: $_</h2>\n<pre>";
   my $res=`make $_ 2>&1`;
   $res=~s/\&/&amp;/g;
