@@ -16,8 +16,8 @@ rect 97 48 112 107
 rect 88 107 121 140
 rect 88 276 121 309
 rect 97 309 112 368
-<< bound >>
-rect 0 0 208 416
+<< properties >>
+string FIXED_BBOX 0 0 208 416
 << li1 >>
 rect 36 68 69 101
 rect 140 68 173 101

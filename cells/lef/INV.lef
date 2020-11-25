@@ -2,6 +2,7 @@ MACRO INV
  CLASS CORE ;
  ORIGIN 0 0 ;
  FOREIGN INV 0 0 ;
+ SIZE 2.08 BY 4.16 ;
  SYMMETRY X Y R90 ;
  SITE unithd ;
   PIN vdd
