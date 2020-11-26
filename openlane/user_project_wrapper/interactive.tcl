@@ -8,11 +8,17 @@ verilog_elaborate
 
 init_floorplan
 
-place_io
+place_io_ol
 
-add_macro_placement mprj 1355 3000 N
+add_macro_placement mprj 1150 1700 N
 
 manual_macro_placement f
+
+set ::env(PDN_CFG) $script_dir/pdn1.tcl
+gen_pdn
+
+set ::env(PDN_CFG) $script_dir/pdn2.tcl
+gen_pdn
 
 global_routing_or
 detailed_routing
