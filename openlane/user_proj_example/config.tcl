@@ -47,6 +47,7 @@ set ::env(FP_PDN_VPITCH) 15
 set ::env(FP_PDN_HOFFSET) 4
 set ::env(FP_PDN_HPITCH) 15
 
+set ::env(CLOCK_PORT) 0
 set ::env(CLOCK_PERIOD) 0
 set ::env(CLOCK_TREE_SYNTH) 0
 
