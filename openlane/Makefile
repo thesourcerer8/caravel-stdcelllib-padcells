@@ -5,7 +5,7 @@ CLEAN = $(foreach block,$(BLOCKS), clean-$(block))
 OPENLANE_TAG ?= rc5
 OPENLANE_IMAGE_NAME ?= openlane:$(OPENLANE_TAG)
 OPENLANE_BASIC_COMMAND = "cd /project/openlane && flow.tcl -design ./$* -save_path .. -save -tag $* -overwrite"
-OPENLANE_STRACE_COMMAND = "cd /project/openlane && strace -s 1000 -o /project/openlane/strace.txt flow.tcl -design ./user_proj_example -save_path .. -save -tag user_proj_example -overwrite"
+OPENLANE_STRACE_COMMAND = "cd /project/openlane && strace -f -s 1000 -o /project/openlane/strace.txt flow.tcl -design ./user_proj_example -save_path .. -save -tag user_proj_example -overwrite"
 OPENLANE_SHELL_COMMAND = "cd /project/openlane && flow.tcl -design ./user_proj_example -save_path .. -save -tag user_proj_example -overwrite"
 OPENLANE_INTERACTIVE_COMMAND = "cd /project/openlane && flow.tcl -it -file ./$*/interactive.tcl"
 
