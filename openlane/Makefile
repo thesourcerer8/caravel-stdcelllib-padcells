@@ -2,9 +2,10 @@ BLOCKS = $(shell find * -maxdepth 0 -type d)
 CONFIG = $(foreach block,$(BLOCKS), ./$(block)/config.tcl)
 CLEAN = $(foreach block,$(BLOCKS), clean-$(block))
 
-OPENLANE_TAG ?= rc4
+OPENLANE_TAG ?= rc5
 OPENLANE_IMAGE_NAME ?= openlane:$(OPENLANE_TAG)
 OPENLANE_BASIC_COMMAND = "cd /project/openlane && flow.tcl -design ./$* -save_path .. -save -tag $* -overwrite"
+OPENLANE_STRACE_COMMAND = "cd /project/openlane && strace -s 1000 -o /project/openlane/strace.txt flow.tcl -design ./user_proj_example -save_path .. -save -tag user_proj_example -overwrite"
 OPENLANE_SHELL_COMMAND = "cd /project/openlane && flow.tcl -design ./user_proj_example -save_path .. -save -tag user_proj_example -overwrite"
 OPENLANE_INTERACTIVE_COMMAND = "cd /project/openlane && flow.tcl -it -file ./$*/interactive.tcl"
 
@@ -61,6 +62,13 @@ shell:
 	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
 	$(OPENLANE_IMAGE_NAME) sh ;\
 
+strace:
+	docker run -it -v $(OPENLANE_ROOT):/openLANE_flow \
+	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-v $(PWD)/..:/project \
+	-e PDK_ROOT=$(PDK_ROOT) \
+	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+	$(OPENLANE_IMAGE_NAME) sh -c $(OPENLANE_STRACE_COMMAND);\
 
 FORCE:
 
