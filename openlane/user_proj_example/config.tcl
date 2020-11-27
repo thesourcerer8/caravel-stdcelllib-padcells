@@ -42,10 +42,10 @@ set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(FP_CORE_UTIL) 5
 #set ::env(PL_TARGET_DENSITY) 0.55
 
-set ::env(FP_PDN_VOFFSET) 4
-set ::env(FP_PDN_VPITCH) 15
-set ::env(FP_PDN_HOFFSET) 4
-set ::env(FP_PDN_HPITCH) 15
+#set ::env(FP_PDN_VOFFSET) 4
+#set ::env(FP_PDN_VPITCH) 15
+#set ::env(FP_PDN_HOFFSET) 4
+#set ::env(FP_PDN_HPITCH) 15
 
 set ::env(CLOCK_PORT) 0
 set ::env(CLOCK_PERIOD) 0
@@ -59,3 +59,5 @@ set ::env(PL_BASIC_PLACEMENT) 0
 set ::env(PL_SKIP_INITIAL_PLACEMENT) 0
 
 set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
+
+source $script_dir/variant.tcl
