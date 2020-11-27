@@ -63,7 +63,7 @@ shell:
 	$(OPENLANE_IMAGE_NAME) sh ;\
 
 strace:
-	docker run -it -v $(OPENLANE_ROOT):/openLANE_flow \
+	docker run --cap-add=SYS_PTRACE -it -v $(OPENLANE_ROOT):/openLANE_flow \
 	-v $(PDK_ROOT):$(PDK_ROOT) \
 	-v $(PWD)/..:/project \
 	-e PDK_ROOT=$(PDK_ROOT) \
