@@ -1,0 +1,1182 @@
+###############################################
+[36m[INFO]: 
+	___   ____   ___  ____   _       ____  ____     ___
+	/   \ |    \ /  _]|    \ | |     /    ||    \   /  _]
+	|     ||  o  )  [_ |  _  || |    |  o  ||  _  | /  [_
+	|  O  ||   _/    _]|  |  || |___ |     ||  |  ||    _]
+	|     ||  | |   [_ |  |  ||     ||  _  ||  |  ||   [_
+	\___/ |__| |_____||__|__||_____||__|__||__|__||_____|
+
+[37m
+[36m[INFO]: Version: openram_tc_1kb-alpha-1-457-gc86ca2f[37m
+[36m[INFO]: Running non-interactively[37m
+[36m[INFO]: Using design configuration at /project/openlane/user_proj_example/config.tcl[37m
+[36m[INFO]: Sourcing Configurations from /project/openlane/user_proj_example/config.tcl[37m
+[36m[INFO]: PDKs root directory: /media/philipp/Daten/skywater/open_pdks/sky130/sky130A[37m
+[36m[INFO]: PDK: sky130A[37m
+[36m[INFO]: Standard Cell Library: sky130_fd_sc_hd[37m
+[36m[INFO]: Sourcing Configurations from /project/openlane/user_proj_example/config.tcl[37m
+[33m[WARNING]: CELL_PAD_EXECLUDE is now deprecated; use CELL_PAD_EXCLUDE instead.[37m
+[36m[INFO]: Current run directory is /project/openlane/user_proj_example/runs/user_proj_example[37m
+[33m[WARNING]: Removing exisiting run /project/openlane/user_proj_example/runs/user_proj_example[37m
+[36m[INFO]: Preparing LEF Files[37m
+mergeLef.py : Merging LEFs
+sky130_fd_sc_hd.lef: SITEs matched found: 0
+sky130_fd_sc_hd.lef: MACROs matched found: 437
+mergeLef.py : Merging LEFs complete
+mergeLef.py : Merging LEFs
+INVX4.lef: SITEs matched found: 0
+INVX4.lef: MACROs matched found: 1
+NOR2X1.lef: SITEs matched found: 0
+NOR2X1.lef: MACROs matched found: 1
+AOI21X1.lef: SITEs matched found: 0
+AOI21X1.lef: MACROs matched found: 1
+BUFX2.lef: SITEs matched found: 0
+BUFX2.lef: MACROs matched found: 1
+OR2X1.lef: SITEs matched found: 0
+OR2X1.lef: MACROs matched found: 1
+INVX2.lef: SITEs matched found: 0
+INVX2.lef: MACROs matched found: 1
+AND2X2.lef: SITEs matched found: 0
+AND2X2.lef: MACROs matched found: 1
+OR2X2.lef: SITEs matched found: 0
+OR2X2.lef: MACROs matched found: 1
+AND2X1.lef: SITEs matched found: 0
+AND2X1.lef: MACROs matched found: 1
+INVX1.lef: SITEs matched found: 0
+INVX1.lef: MACROs matched found: 1
+INV.lef: SITEs matched found: 0
+INV.lef: MACROs matched found: 1
+mergeLef.py : Merging LEFs complete
+[36m[INFO]: Merging the following extra LEFs: /project/openlane/user_proj_example/../../cells/lef/INVX4.lef /project/openlane/user_proj_example/../../cells/lef/NOR2X1.lef /project/openlane/user_proj_example/../../cells/lef/AOI21X1.lef /project/openlane/user_proj_example/../../cells/lef/BUFX2.lef /project/openlane/user_proj_example/../../cells/lef/OR2X1.lef /project/openlane/user_proj_example/../../cells/lef/INVX2.lef /project/openlane/user_proj_example/../../cells/lef/AND2X2.lef /project/openlane/user_proj_example/../../cells/lef/OR2X2.lef /project/openlane/user_proj_example/../../cells/lef/AND2X1.lef /project/openlane/user_proj_example/../../cells/lef/INVX1.lef /project/openlane/user_proj_example/../../cells/lef/INV.lef[37m
+[36m[INFO]: Trimming Liberty...[37m
+[36m[INFO]: Preparation complete[37m
+[36m[INFO]: Running Synthesis...[37m
+Reading /media/philipp/Daten/skywater/open_pdks/sky130/sky130A/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib as a blackbox
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+2. Executing Liberty frontend.
+Imported 24 cell types from liberty file.
+
+3. Executing Verilog-2005 frontend: /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v
+Parsing SystemVerilog input from `/project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v' to AST representation.
+Replacing existing blackbox module `\AND2X1' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:9.1-16.10.
+Generating RTLIL representation for module `\AND2X1'.
+Replacing existing blackbox module `\AND2X2' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:18.1-25.10.
+Generating RTLIL representation for module `\AND2X2'.
+Replacing existing blackbox module `\OR2X1' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:27.1-35.10.
+Generating RTLIL representation for module `\OR2X1'.
+Replacing existing blackbox module `\OR2X2' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:37.1-45.10.
+Generating RTLIL representation for module `\OR2X2'.
+Replacing existing blackbox module `\NOR2X1' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:47.1-55.10.
+Generating RTLIL representation for module `\NOR2X1'.
+Generating RTLIL representation for module `\NOR2X2'.
+Replacing existing blackbox module `\INV' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:67.1-73.10.
+Generating RTLIL representation for module `\INV'.
+Replacing existing blackbox module `\INVX1' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:75.1-81.10.
+Generating RTLIL representation for module `\INVX1'.
+Replacing existing blackbox module `\INVX2' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:82.1-88.10.
+Generating RTLIL representation for module `\INVX2'.
+Generating RTLIL representation for module `\INVX3'.
+Replacing existing blackbox module `\INVX4' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:96.1-102.10.
+Generating RTLIL representation for module `\INVX4'.
+Generating RTLIL representation for module `\BUFX1'.
+Replacing existing blackbox module `\BUFX2' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:111.1-117.10.
+Generating RTLIL representation for module `\BUFX2'.
+Replacing existing blackbox module `\AOI21X1' at /project/openlane/user_proj_example/../../verilog//rtl/user_proj_cells.v:119.1-128.10.
+Generating RTLIL representation for module `\AOI21X1'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /project/openlane/user_proj_example/../../verilog/rtl/defines.v
+Parsing SystemVerilog input from `/project/openlane/user_proj_example/../../verilog/rtl/defines.v' to AST representation.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /project/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v
+Parsing SystemVerilog input from `/project/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v' to AST representation.
+Generating RTLIL representation for module `\user_proj_example'.
+/project/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:47: Warning: Identifier `\vccd1' is implicitly declared.
+/project/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:48: Warning: Identifier `\vssd1' is implicitly declared.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v
+Parsing SystemVerilog input from `/project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v' to AST representation.
+Replacing existing blackbox module `\AND2X1' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:9.1-16.10.
+Generating RTLIL representation for module `\AND2X1'.
+Replacing existing blackbox module `\AND2X2' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:18.1-25.10.
+Generating RTLIL representation for module `\AND2X2'.
+Replacing existing blackbox module `\OR2X1' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:27.1-35.10.
+Generating RTLIL representation for module `\OR2X1'.
+Replacing existing blackbox module `\OR2X2' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:37.1-45.10.
+Generating RTLIL representation for module `\OR2X2'.
+Replacing existing blackbox module `\NOR2X1' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:47.1-55.10.
+Generating RTLIL representation for module `\NOR2X1'.
+Replacing existing blackbox module `\NOR2X2' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:57.1-65.10.
+Generating RTLIL representation for module `\NOR2X2'.
+Replacing existing blackbox module `\INV' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:67.1-73.10.
+Generating RTLIL representation for module `\INV'.
+Replacing existing blackbox module `\INVX1' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:75.1-81.10.
+Generating RTLIL representation for module `\INVX1'.
+Replacing existing blackbox module `\INVX2' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:82.1-88.10.
+Generating RTLIL representation for module `\INVX2'.
+Replacing existing blackbox module `\INVX3' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:89.1-95.10.
+Generating RTLIL representation for module `\INVX3'.
+Replacing existing blackbox module `\INVX4' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:96.1-102.10.
+Generating RTLIL representation for module `\INVX4'.
+Replacing existing blackbox module `\BUFX1' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:104.1-110.10.
+Generating RTLIL representation for module `\BUFX1'.
+Replacing existing blackbox module `\BUFX2' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:111.1-117.10.
+Generating RTLIL representation for module `\BUFX2'.
+Replacing existing blackbox module `\AOI21X1' at /project/openlane/user_proj_example/../../verilog/rtl/user_proj_cells.v:119.1-128.10.
+Generating RTLIL representation for module `\AOI21X1'.
+Successfully finished Verilog frontend.
+
+7. Generating Graphviz representation of design.
+Writing dot description to `/project/openlane/user_proj_example/runs/user_proj_example/tmp/synthesis/hierarchy.dot'.
+Dumping module user_proj_example to page 1.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \user_proj_example
+
+8.2. Analyzing design hierarchy..
+Top module:  \user_proj_example
+Removed 0 unused modules.
+
+9. Executing SYNTH pass.
+
+9.1. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1.1. Analyzing design hierarchy..
+Top module:  \user_proj_example
+
+9.1.2. Analyzing design hierarchy..
+Top module:  \user_proj_example
+Removed 0 unused modules.
+
+9.2. Executing PROC pass (convert processes to netlists).
+
+9.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+9.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+9.2.4. Executing PROC_INIT pass (extract init attributes).
+
+9.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+9.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+9.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+9.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+
+9.2.9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.3. Executing FLATTEN pass (flatten design).
+
+9.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.6. Executing CHECK pass (checking for obvious problems).
+checking module user_proj_example..
+Warning: Wire user_proj_example.\wbs_dat_o [31] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [30] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [29] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [28] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [27] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [26] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [25] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [24] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [23] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [22] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [21] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [20] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [19] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [18] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [17] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [16] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [15] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [14] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [13] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [12] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [11] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [10] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [9] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [8] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [7] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [6] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [5] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [4] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [3] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [2] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [1] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_dat_o [0] is used but has no driver.
+Warning: Wire user_proj_example.\wbs_ack_o is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [127] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [126] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [125] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [124] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [123] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [122] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [121] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [120] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [119] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [118] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [117] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [116] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [115] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [114] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [113] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [112] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [111] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [110] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [109] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [108] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [107] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [106] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [105] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [104] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [103] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [102] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [101] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [100] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [99] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [98] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [97] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [96] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [95] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [94] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [93] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [92] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [91] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [90] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [89] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [88] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [87] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [86] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [85] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [84] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [83] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [82] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [81] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [80] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [79] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [78] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [77] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [76] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [75] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [74] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [73] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [72] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [71] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [70] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [69] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [68] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [67] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [66] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [65] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [64] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [63] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [62] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [61] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [60] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [59] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [58] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [57] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [56] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [55] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [54] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [53] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [52] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [51] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [50] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [49] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [48] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [47] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [46] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [45] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [44] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [43] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [42] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [41] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [40] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [39] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [38] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [37] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [36] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [35] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [34] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [33] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [32] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [31] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [30] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [29] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [28] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [27] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [26] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [25] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [24] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [23] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [22] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [21] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [20] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [19] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [18] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [17] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [16] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [15] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [14] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [13] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [12] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [11] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [10] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [9] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [8] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [7] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [6] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [5] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [4] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [3] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [2] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [1] is used but has no driver.
+Warning: Wire user_proj_example.\la_data_out [0] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [37] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [36] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [35] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [34] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [33] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [32] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [31] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [30] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [29] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [27] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [26] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [24] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [23] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [21] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [20] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [18] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [16] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [14] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [12] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [10] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [8] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [7] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [6] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [4] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [3] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [1] is used but has no driver.
+Warning: Wire user_proj_example.\io_out [0] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [37] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [36] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [35] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [34] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [33] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [32] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [31] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [30] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [29] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [28] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [27] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [26] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [25] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [24] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [23] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [22] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [21] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [20] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [19] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [18] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [17] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [16] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [15] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [14] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [13] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [12] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [11] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [10] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [9] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [8] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [7] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [6] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [5] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [4] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [3] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [2] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [1] is used but has no driver.
+Warning: Wire user_proj_example.\io_oeb [0] is used but has no driver.
+found and reported 226 problems.
+
+9.7. Executing OPT pass (performing simple optimizations).
+
+9.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \user_proj_example..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \user_proj_example.
+Performed a total of 0 changes.
+
+9.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.7.9. Finished OPT passes. (There is nothing left to do.)
+
+9.8. Executing FSM pass (extract and optimize FSM).
+
+9.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+9.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+9.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+9.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+9.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+9.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+9.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+9.9. Executing OPT pass (performing simple optimizations).
+
+9.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \user_proj_example..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \user_proj_example.
+Performed a total of 0 changes.
+
+9.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.9.9. Finished OPT passes. (There is nothing left to do.)
+
+9.10. Executing WREDUCE pass (reducing word size of cells).
+
+9.11. Executing PEEPOPT pass (run peephole optimizers).
+
+9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module user_proj_example:
+  created 0 $alu and 0 $macc cells.
+
+9.14. Executing SHARE pass (SAT-based resource sharing).
+
+9.15. Executing OPT pass (performing simple optimizations).
+
+9.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \user_proj_example..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \user_proj_example.
+Performed a total of 0 changes.
+
+9.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.15.9. Finished OPT passes. (There is nothing left to do.)
+
+9.16. Executing MEMORY pass.
+
+9.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+9.16.2. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+9.16.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.16.4. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+9.16.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.16.6. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+9.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.18. Executing OPT pass (performing simple optimizations).
+
+9.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+<suppressed ~55 debug messages>
+
+9.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.18.5. Finished fast OPT passes.
+
+9.19. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+9.20. Executing OPT pass (performing simple optimizations).
+
+9.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \user_proj_example..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \user_proj_example.
+Performed a total of 0 changes.
+
+9.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.20.6. Executing OPT_SHARE pass.
+
+9.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.20.10. Finished OPT passes. (There is nothing left to do.)
+
+9.21. Executing TECHMAP pass (map to technology primitives).
+
+9.21.1. Executing Verilog-2005 frontend: /build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+9.21.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~67 debug messages>
+
+9.22. Executing OPT pass (performing simple optimizations).
+
+9.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.22.5. Finished fast OPT passes.
+
+9.23. Executing ABC pass (technology mapping using ABC).
+
+9.23.1. Extracting gate netlist of module `\user_proj_example' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+9.24. Executing OPT pass (performing simple optimizations).
+
+9.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+9.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+9.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+9.24.5. Finished fast OPT passes.
+
+9.25. Executing HIERARCHY pass (managing design hierarchy).
+
+9.25.1. Analyzing design hierarchy..
+Top module:  \user_proj_example
+
+9.25.2. Analyzing design hierarchy..
+Top module:  \user_proj_example
+Removed 0 unused modules.
+
+9.26. Printing statistics.
+
+=== user_proj_example ===
+
+   Number of wires:                 18
+   Number of wire bits:            606
+   Number of public wires:          18
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     AND2X1                          1
+     AND2X2                          1
+     AOI21X1                         1
+     BUFX2                           1
+     INV                             1
+     INVX1                           1
+     INVX2                           1
+     INVX4                           1
+     NOR2X1                          1
+     OR2X1                           1
+     OR2X2                           1
+
+9.27. Executing CHECK pass (checking for obvious problems).
+checking module user_proj_example..
+found and reported 0 problems.
+
+10. Executing SHARE pass (SAT-based resource sharing).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \user_proj_example..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \user_proj_example.
+Performed a total of 0 changes.
+
+11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\user_proj_example'.
+Removed a total of 0 cells.
+
+11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module user_proj_example.
+
+11.9. Finished OPT passes. (There is nothing left to do.)
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+
+13. Printing statistics.
+
+=== user_proj_example ===
+
+   Number of wires:                 18
+   Number of wire bits:            606
+   Number of public wires:          18
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     AND2X1                          1
+     AND2X2                          1
+     AOI21X1                         1
+     BUFX2                           1
+     INV                             1
+     INVX1                           1
+     INVX2                           1
+     INVX4                           1
+     NOR2X1                          1
+     OR2X1                           1
+     OR2X2                           1
+
+14. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_4 (noninv, pins=3, area=23.77) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_4 (noninv, pins=4, area=28.78) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_4 (noninv, pins=4, area=30.03) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_4 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_4 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_4 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+14.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\user_proj_example':
+
+15. Printing statistics.
+[INFO]: ABC: WireLoad : S_2
+
+=== user_proj_example ===
+
+   Number of wires:                 18
+   Number of wire bits:            606
+   Number of public wires:          18
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     AND2X1                          1
+     AND2X2                          1
+     AOI21X1                         1
+     BUFX2                           1
+     INV                             1
+     INVX1                           1
+     INVX2                           1
+     INVX4                           1
+     NOR2X1                          1
+     OR2X1                           1
+     OR2X2                           1
+
+16. Executing ABC pass (technology mapping using ABC).
+
+16.1. Extracting gate netlist of module `\user_proj_example' to `/tmp/yosys-abc-zQ74vw/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+17. Executing SETUNDEF pass (replace undef values with defined constants).
+
+18. Executing HILOMAP pass (mapping to constant drivers).
+
+19. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_proj_example..
+Removed 0 unused cells and 226 unused wires.
+<suppressed ~1 debug messages>
+
+21. Executing INSBUF pass (insert buffer cells for connected wires).
+
+22. Executing CHECK pass (checking for obvious problems).
+checking module user_proj_example..
+found and reported 0 problems.
+
+23. Printing statistics.
+
+=== user_proj_example ===
+
+   Number of wires:                 18
+   Number of wire bits:            606
+   Number of public wires:          18
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                237
+     AND2X1                          1
+     AND2X2                          1
+     AOI21X1                         1
+     BUFX2                           1
+     INV                             1
+     INVX1                           1
+     INVX2                           1
+     INVX4                           1
+     NOR2X1                          1
+     OR2X1                           1
+     OR2X2                           1
+     sky130_fd_sc_hd__conb_1       226
+
+   Area for cell type \AND2X1 is unknown!
+   Area for cell type \AND2X2 is unknown!
+   Area for cell type \AOI21X1 is unknown!
+   Area for cell type \BUFX2 is unknown!
+   Area for cell type \INV is unknown!
+   Area for cell type \INVX1 is unknown!
+   Area for cell type \INVX2 is unknown!
+   Area for cell type \INVX4 is unknown!
+   Area for cell type \NOR2X1 is unknown!
+   Area for cell type \OR2X1 is unknown!
+   Area for cell type \OR2X2 is unknown!
+
+   Chip area for module '\user_proj_example': 848.313600
+
+24. Executing Verilog backend.
+Dumping module `\user_proj_example'.
+
+Warnings: 228 unique messages, 228 total
+End of script. Logfile hash: 75c56a7466, CPU: user 1.97s system 0.10s, MEM: 44.29 MB peak
+Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+Time spent: 33% 4x read_liberty (0 sec), 30% 4x stat (0 sec), ...
+[36m[INFO]: Changing netlist from 0 to /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v[37m
+[36m[INFO]: Running Static Timing Analysis...[37m
+OpenSTA 2.2.0 7662c12482 Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /media/philipp/Daten/skywater/open_pdks/sky130/sky130A/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib, line 31 default_operating_condition ff_n40C_1v95 not found.
+Warning: /media/philipp/Daten/skywater/open_pdks/sky130/sky130A/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, line 32 default_operating_condition ss_100C_1v60 not found.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 700 module AND2X1 not found.  Creating black box for AND2X1.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 707 module AND2X2 not found.  Creating black box for AND2X2.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 714 module AOI21X1 not found.  Creating black box for AOI21X1.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 722 module BUFX2 not found.  Creating black box for BUFX2.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 728 module INV not found.  Creating black box for INV.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 734 module INVX1 not found.  Creating black box for INVX1.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 740 module INVX2 not found.  Creating black box for INVX2.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 746 module INVX4 not found.  Creating black box for INVX4.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 752 module NOR2X1 not found.  Creating black box for NOR2X1.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 759 module OR2X1 not found.  Creating black box for OR2X1.
+Warning: /project/openlane/user_proj_example/runs/user_proj_example/results/synthesis/user_proj_example.synthesis.v, line 766 module OR2X2 not found.  Creating black box for OR2X2.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+Warning: base.sdc, 1 port '0' not found.
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 0.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 0.0
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+Warning: base.sdc, 8 port '0' not found.
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+tns 0.00
+wns 0.00
+[36m[INFO]: Synthesis was successful[37m
+[36m[INFO]: Running Floorplanning...[37m
+[36m[INFO]: Running Initial Floorplanning...[37m
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Warning: /media/philipp/Daten/skywater/open_pdks/sky130/sky130A/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib, line 31 default_operating_condition tt_025C_1v80 not found.
+Notice 0: Reading LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+Notice 0:     Created 11 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 448 library cells
+Notice 0: Finished LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 pin VPB missing from liberty cell
+Warning: LEF macro sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 pin VPB missing from liberty cell
+Warning: LEF master AND2X1 has no liberty cell.
+Warning: LEF master AND2X2 has no liberty cell.
+Warning: LEF master AOI21X1 has no liberty cell.
+Warning: LEF master BUFX2 has no liberty cell.
+Warning: LEF master INV has no liberty cell.
+Warning: LEF master INVX1 has no liberty cell.
+Warning: LEF master INVX2 has no liberty cell.
+Warning: LEF master INVX4 has no liberty cell.
+Warning: LEF master NOR2X1 has no liberty cell.
+Warning: LEF master OR2X1 has no liberty cell.
+Warning: LEF master OR2X2 has no liberty cell.
+Info: Added 212 rows of 1280 sites.
+[36m[INFO]: Core area width: 588.96[37m
+[36m[INFO]: Core area height: 578.24[37m
+[36m[INFO]: Changing layout from 0 to /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/verilog2def_openroad.def[37m
+Notice 0: Reading LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged.lef
+Notice 0:     Created 11 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 448 library cells
+Notice 0: Finished LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/verilog2def_openroad.def
+Notice 0: Design: user_proj_example
+Notice 0:     Created 604 pins.
+Notice 0:     Created 237 components and 955 component-terminals.
+Notice 0:     Created 606 nets and 277 connections.
+Notice 0: Finished DEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/verilog2def_openroad.def
+Top-level design name: user_proj_example
+Block boundaries: 0 0 600000 600000
+Writing /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def
+[36m[INFO]: Changing layout from /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/verilog2def_openroad.def to /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def[37m
+[36m[INFO]:  Manual Macro Placement...[37m
+Notice 0: Reading LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged.lef
+Notice 0:     Created 11 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 448 library cells
+Notice 0: Finished LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def
+Notice 0: Design: user_proj_example
+Notice 0:     Created 604 pins.
+Notice 0:     Created 237 components and 955 component-terminals.
+Notice 0:     Created 606 nets and 277 connections.
+Notice 0: Finished DEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def
+Placing the following macros:
+{'AND2X1': ['5000', '3000', 'N'], 'AND2X2': ['5000', '6000', 'N'], 'AOI21X1': ['5000', '9000', 'N'], 'BUFX2': ['5000', '12000', 'N'], 'INV': ['5000', '15000', 'N'], 'INVX1': ['5000', '18000', 'N'], 'INVX2': ['5000', '21000', 'N'], 'INVX4': ['5000', '24000', 'N'], 'NOR2X1': ['5000', '27000', 'N'], 'OR2X1': ['5000', '30000', 'N'], 'OR2X2': ['5000', '33000', 'N']}
+Design name: user_proj_example
+Placing AND2X1
+Placing AND2X2
+Placing AOI21X1
+Placing BUFX2
+Placing INV
+Placing INVX1
+Placing INVX2
+Placing INVX4
+Placing NOR2X1
+Placing OR2X1
+Placing OR2X2
+Successfully placed 11 instances
+[36m[INFO]: Changing layout from /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def to /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def.macro_placement.def[37m
+[36m[INFO]: Running Tap/Decap Insertion...[37m
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Notice 0: Reading LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+Notice 0:     Created 11 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 448 library cells
+Notice 0: Finished LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def.macro_placement.def
+Notice 0: Design: user_proj_example
+Notice 0:     Created 604 pins.
+Notice 0:     Created 237 components and 955 component-terminals.
+Notice 0:     Created 606 nets and 277 connections.
+Notice 0: Finished DEF file: /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def.macro_placement.def
+Running tapcell...
+Step 1: Cut rows...
+[INFO] Macro blocks found: 0
+[INFO] #Original rows: 212
+[INFO] #Cut rows: 0
+Step 2: Insert endcaps...
+[INFO] #Endcaps inserted: 424
+Step 3: Insert tapcells...
+[INFO] #Tapcells inserted: 4387
+Running tapcell... Done!
+[36m[INFO]: Changing layout from /project/openlane/user_proj_example/runs/user_proj_example/tmp/floorplan/ioPlacer.def.macro_placement.def to /project/openlane/user_proj_example/runs/user_proj_example/results/floorplan/user_proj_example.floorplan.def[37m
+[36m[INFO]: Running Placement...[37m
+[36m[INFO]: Running Global Placement...[37m
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Notice 0: Reading LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+Notice 0:     Created 11 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 448 library cells
+Notice 0: Finished LEF file:  /project/openlane/user_proj_example/runs/user_proj_example/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /project/openlane/user_proj_example/runs/user_proj_example/results/floorplan/user_proj_example.floorplan.def
+Notice 0: Design: user_proj_example
+Notice 0:     Created 604 pins.
+Notice 0:     Created 5048 components and 10577 component-terminals.
+Notice 0:     Created 606 nets and 277 connections.
+Notice 0: Finished DEF file: /project/openlane/user_proj_example/runs/user_proj_example/results/floorplan/user_proj_example.floorplan.def
+[INFO] DBU = 1000
+[INFO] SiteSize = (460, 2720)
+[INFO] CoreAreaLxLy = (5520, 10880)
+[INFO] CoreAreaUxUy = (594320, 587520)
+[INFO] NumInstances = 5048
+[INFO] NumPlaceInstances = 226
+[INFO] NumFixedInstances = 4820
+[INFO] NumDummyInstances = 0
+[INFO] NumNets = 606
+[INFO] NumPins = 881
+[INFO] DieAreaLxLy = (0, 0)
+[INFO] DieAreaUxUy = (600000, 600000)
+[INFO] CoreAreaLxLy = (5520, 10880)
+[INFO] CoreAreaUxUy = (594320, 587520)
+[INFO] CoreArea = 339525632000
+[INFO] NonPlaceInstsArea = 7171041600
+[INFO] PlaceInstsArea = 848313600
+[INFO] Util(%) = 0.255244
+[INFO] StdInstsArea = 848313600
+[INFO] MacroInstsArea = 0
+[INFO] FillerInit: NumGCells = 48698
+[INFO] FillerInit: NumGNets = 606
+[INFO] FillerInit: NumGPins = 881
+[INFO] TargetDensity = 0.550000
+[INFO] AveragePlaceInstArea = 3753600
+[INFO] IdealBinArea = 6824727
+[INFO] IdealBinCnt = 49749
+[INFO] TotalBinArea = 339525632000
+[INFO] BinCnt = (128, 128)
+[INFO] BinSize = (4600, 4505)
+[INFO] NumBins = 16384
+[NesterovSolve] Iter: 1 overflow: 0.286815 HPWL: 129253262
+[ERROR] RePlAce divergence detected. 
+        Please decrease init_density_penalty value (REPL-3)
+Error: RePlAce terminated with errors.
+[31m[ERROR]: during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee >&@stdout /project/openlane/user_proj_example/runs/user_proj_example/logs/placement/replace.log"[37m
+[31m[ERROR]: Exit code: 1[37m
+[31m[ERROR]: Last 10 lines:
+child process exited abnormally
+[37m
+[31m[ERROR]: Please check openroad  log file[37m
+[31m[ERROR]: Dumping to /project/openlane/user_proj_example/runs/user_proj_example/error.log[37m
+
+    while executing
+"try_catch openroad -exit $::env(SCRIPTS_DIR)/openroad/or_replace.tcl |& tee $::env(TERMINAL_OUTPUT) $::env(replaceio_log_file_tag).log"
+    (procedure "global_placement_or" line 5)
+    invoked from within
+"global_placement_or"
+    (procedure "run_placement" line 17)
+    invoked from within
+"run_placement"
+    (procedure "run_non_interactive_mode" line 13)
+    invoked from within
+"run_non_interactive_mode {*}$argv"
+    invoked from within
+"if { [info exists flags_map(-interactive)] || [info exists flags_map(-it)] } {
+	puts_info "Running interactively"
+	if { [info exists arg_values(-file)..."
+    (file "/openLANE_flow/flow.tcl" line 169)
