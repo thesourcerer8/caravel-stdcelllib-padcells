@@ -41,6 +41,7 @@ close OUT;
 
 mkdir "variants";
 system "make user_proj_example 2>&1 >variants/$variant.log";
+system "mv user_proj_example/runs/user_proj_example user_proj_example/runs/$variant";
 
 #exit;
 
