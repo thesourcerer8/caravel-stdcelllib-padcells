@@ -1,19 +1,20 @@
 #!/usr/bin/perl -w
 
-foreach my $PL_BASIC_PLACEMENT (0,1)
+foreach my $PL_BASIC_PLACEMENT (0) # 1 would crash openroad with "Please tune the parameters again (REPL-5)"
 {
   foreach my $CELL_PAD (0,1)
   {  
-    foreach my $DIODE_INSERTION_STRATEGY (0,1)
+    foreach my $DIODE_INSERTION_STRATEGY (0,1,2,3)
     {
-      foreach my $PL_RANDOM_GLB_PLACEMENT (0,1)
+      foreach my $PL_RANDOM_GLB_PLACEMENT (0,1) 
       {
-        foreach my $PL_SKIP_INITIAL_PLACEMENT (0,1)
+        foreach my $PL_SKIP_INITIAL_PLACEMENT (1) # 0 would crash openroad with "Please tune the parameters again (REPL-5)"
         {
-	  foreach my $PDN (0,1)
+	  foreach my $PDN (0) # (0,1) # Does not have an effect on the crashes, the power distribution network should be looked at later on
           {
 
 my $variant="$PL_BASIC_PLACEMENT-$CELL_PAD-$DIODE_INSERTION_STRATEGY-$PL_RANDOM_GLB_PLACEMENT-$PL_SKIP_INITIAL_PLACEMENT-$PDN";
+next if(-s "variants/$variant.log");
 
 print "$variant\n";
 open OUT,">user_proj_example/variant.tcl";		  
