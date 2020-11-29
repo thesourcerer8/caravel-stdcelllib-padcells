@@ -1,10 +1,11 @@
 #!/usr/bin/perl -w
 
 
-foreach my $lef (<*.lef>)
+foreach my $lef (<orig/*.lef>)
 {
+  $lef=~s/^orig\///;	
   my $mag="../mag/orig/$lef"; $mag=~s/\.lef$/\.mag/;
-
+  print "$lef\n";
   open LEFIN,"<orig/$lef";
   open LEFOUT,">$lef";
   while(<LEFIN>)
@@ -19,18 +20,21 @@ foreach my $lef (<*.lef>)
     #print $_;
     if(m/FOREIGN/)
     {
-      open IN,"<$mag";
-      while(<IN>)
+      if(open(MAG,"<$mag"))
       {
-        if(m/rect 0 0 (\d+) (\d+)/)
+        while(<MAG>)
         {
-          my $h=$1;
-          my $w=$2;
-          print "$lef -> ".($1/100.0)." ".($2/100.0)."\n";
-	  print LEFOUT " SIZE ".($1/100.0)." BY ".($2/100.0)." ;\n";
-        }
+          if(m/rect 0 0 (\d+) (\d+)/)
+          {
+            my $h=$1;
+            my $w=$2;
+            my $factor=0.01;
+            print "$lef -> ".($1*$factor)." ".($2*$factor)."\n";
+            print LEFOUT " SIZE ".($1*$factor)." BY ".($2*$factor)." ;\n";
+          }
+	}
+        close MAG;
       }
-      close IN;
     }
   }
   close LEFOUT;
