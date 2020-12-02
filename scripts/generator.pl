@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 
+my $STDCELLLIB=$ENV{'STDCELLLIB'} || "/home/philipp/libresilicon/StdCellLib";
+
 print <<EOF
 `default_nettype none
 
@@ -52,7 +54,7 @@ EOF
 our $nextla=0;
 our $nextio=0;
 
-foreach my $mag(</home/philipp/libresilicon/StdCellLib/Catalog/*.mag>)
+foreach my $mag(<$STDCELLLIB/Catalog/*.mag>)
 {
   next if((-s $mag)<=50);
   #print `ls -la $mag`;
