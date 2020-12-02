@@ -5,6 +5,7 @@ foreach my $lef (<orig/*.lef>)
 {
   $lef=~s/^orig\///;	
   my $mag="../mag/$lef"; $mag=~s/\.lef$/\.mag/;
+  my $cell=$lef; $cell=~s/\.lef//;
   print "$lef\n";
   open LEFIN,"<orig/$lef";
   open LEFOUT,">$lef";
@@ -49,4 +50,11 @@ foreach my $lef (<orig/*.lef>)
   }
   close LEFOUT;
   close LEFIN;
+
+  open MAGIC,"|magic -dnull -noconsole -T sky130A";
+  print MAGIC "lef read $lef\n";
+  print MAGIC "load $cell\n";
+  print MAGIC "lef write $lef\n";
+  print MAGIC "quit\n";
+  close MAGIC;
 }
