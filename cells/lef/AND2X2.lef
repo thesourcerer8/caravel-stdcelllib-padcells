@@ -11,7 +11,7 @@ MACRO AND2X2
   SITE unithd ;
   PIN vdd
     DIRECTION INOUT ;
-    USE SIGNAL ;
+    USE POWER ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
@@ -20,7 +20,7 @@ MACRO AND2X2
   END vdd
   PIN gnd
     DIRECTION INOUT ;
-    USE SIGNAL ;
+    USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;

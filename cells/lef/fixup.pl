@@ -1,6 +1,5 @@
 #!/usr/bin/perl -w
 
-
 foreach my $lef (<orig/*.lef>)
 {
   $lef=~s/^orig\///;	
@@ -9,14 +8,18 @@ foreach my $lef (<orig/*.lef>)
   print "$lef\n";
   open LEFIN,"<orig/$lef";
   open LEFOUT,">$lef";
+  our $pin="";
   while(<LEFIN>)
   {
+    $pin=$1 if(m/PIN (\w+)/);	  
     s/SYMMETRY X Y R90/SITE unithd/;
     s/SITE CORE/SYMMETRY X Y R90/;
     #s/SITE unithd.*//;
     s/metal2/met2/;
     s/VDD/vdd/;
     s/GND/gnd/;
+    s/USE SIGNAL/USE POWER/ if($pin eq "VDD");
+    s/USE SIGNAL/USE GROUND/ if($pin eq "GND");
 
     print LEFOUT $_;	   
     #print $_;
