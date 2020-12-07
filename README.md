@@ -2,9 +2,9 @@
 
 This project is a test-wafer which puts various LS130 cells into the user-area of a Caravel harness.
 
-The LS130 cells are generated with the https://github.com/thesourcerer8/StdCellLib flow (which uses Librecell's lclayout and lctime), the build report can be seen here:
+The LS130 cells are generated with the https://github.com/thesourcerer8/StdCellLib flow (which uses Librecell's lclayout and lctime), using the Tech.SKY130 configuration, the build report can be seen here:
 https://pdk.libresilicon.com/dist/StdCellLib_20201106_SKY130/Catalog/ 
-The cells were copied into this repository to avoid additional dependencies: https://github.com/thesourcerer8/caravel-stdcelllib-stdcells/tree/release/cells
+The cells were copied into this repository to avoid additional dependencies: https://github.com/thesourcerer8/caravel_stdcelllib_stdcells/tree/release/cells
 
 A generator was developed to generate a Verilog file for all the cells that places each cell once and connects it to the IOs of the harness:
 https://github.com/thesourcerer8/caravel-stdcelllib-stdcells/blob/release/scripts/generator.pl The script needs to be run from the Catalog directory of your StdCellLib. The output is then used as https://github.com/thesourcerer8/caravel-stdcelllib-stdcells/blob/release/verilog/rtl/user_proj_example.v
