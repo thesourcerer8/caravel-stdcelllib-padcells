@@ -7,8 +7,6 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/user_proj_example.v"
 #	$script_dir/../../verilog/rtl/user_proj_cells.v"
 
-
-
 set verilog_root $script_dir/../../verilog/
 set lef_root $script_dir/../../cells/lef/
 set gds_root $script_dir/../../cells/gds/
@@ -26,6 +24,7 @@ set ::env(VERILOG_FILES_BLACKBOX) "$verilog_root/rtl/user_proj_cells.v"
 	
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
+set ::env(CLOCK_PORT) ""
 #set ::env(CLOCK_NET) "counter.clk"
 #set ::env(CLOCK_PERIOD) "10"
 
