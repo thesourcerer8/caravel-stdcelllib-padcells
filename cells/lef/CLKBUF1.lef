@@ -1,0 +1,62 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO CLKBUF1
+  CLASS CORE ;
+  FOREIGN CLKBUF1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 8.280 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 2.530 8.280 2.920 ;
+    END
+  END vdd
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 -0.200 8.280 0.200 ;
+    END
+  END gnd
+  PIN Y
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 6.790 1.900 7.020 2.130 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 6.790 0.600 7.020 0.830 ;
+    END
+  END Y
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.810 1.700 1.040 1.740 ;
+        RECT 1.730 1.700 1.960 1.740 ;
+        RECT 0.810 1.560 1.960 1.700 ;
+        RECT 0.810 1.510 1.040 1.560 ;
+        RECT 1.730 1.510 1.960 1.560 ;
+        RECT 0.850 1.220 0.990 1.510 ;
+        RECT 1.770 1.220 1.910 1.510 ;
+        RECT 0.810 0.990 1.040 1.220 ;
+        RECT 1.730 0.990 1.960 1.220 ;
+    END
+  END A
+END CLKBUF1
+END LIBRARY
+

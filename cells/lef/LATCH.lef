@@ -1,0 +1,77 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO LATCH
+  CLASS CORE ;
+  FOREIGN LATCH ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 6.440 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 2.530 6.440 2.920 ;
+    END
+  END vdd
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 -0.200 6.440 0.200 ;
+    END
+  END gnd
+  PIN Q
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 4.490 0.990 4.720 1.220 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 4.490 1.510 4.720 1.740 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 5.870 1.900 6.100 2.130 ;
+        RECT 5.910 0.830 6.050 1.900 ;
+        RECT 5.870 0.600 6.100 0.830 ;
+    END
+  END Q
+  PIN D
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 1.730 0.990 1.960 1.350 ;
+    END
+  END D
+  PIN CLK
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 3.110 1.510 3.340 1.740 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 0.810 0.990 1.040 1.220 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 3.570 1.510 3.800 1.740 ;
+    END
+  END CLK
+END LATCH
+END LIBRARY
+

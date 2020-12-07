@@ -1,0 +1,69 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO NAND2X1
+  CLASS CORE ;
+  FOREIGN NAND2X1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 2.760 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 2.530 2.760 2.920 ;
+    END
+  END vdd
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 -0.200 2.760 0.200 ;
+    END
+  END gnd
+  PIN Y
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.350 2.090 0.580 2.130 ;
+        RECT 2.190 2.090 2.420 2.130 ;
+        RECT 0.350 1.950 2.420 2.090 ;
+        RECT 0.350 1.900 0.580 1.950 ;
+        RECT 2.190 1.900 2.420 1.950 ;
+        RECT 2.230 0.830 2.370 1.900 ;
+        RECT 2.190 0.600 2.420 0.830 ;
+    END
+  END Y
+  PIN B
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 1.730 1.510 1.960 1.740 ;
+        RECT 1.770 1.220 1.910 1.510 ;
+        RECT 1.730 0.990 1.960 1.220 ;
+    END
+  END B
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.810 1.510 1.040 1.740 ;
+        RECT 0.850 1.220 0.990 1.510 ;
+        RECT 0.810 0.990 1.040 1.220 ;
+    END
+  END A
+END NAND2X1
+END LIBRARY
+

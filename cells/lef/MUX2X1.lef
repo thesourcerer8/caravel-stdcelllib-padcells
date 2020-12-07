@@ -1,0 +1,84 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO MUX2X1
+  CLASS CORE ;
+  FOREIGN MUX2X1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 5.520 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 2.530 5.520 2.920 ;
+    END
+  END vdd
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 -0.200 5.520 0.200 ;
+    END
+  END gnd
+  PIN Y
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 3.110 2.090 3.340 2.130 ;
+        RECT 3.110 1.950 4.210 2.090 ;
+        RECT 3.110 1.900 3.340 1.950 ;
+        RECT 3.110 0.790 3.340 0.830 ;
+        RECT 4.070 0.790 4.210 1.950 ;
+        RECT 3.110 0.650 4.210 0.790 ;
+        RECT 3.110 0.600 3.340 0.650 ;
+    END
+  END Y
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 1.730 0.990 1.960 1.350 ;
+    END
+  END A
+  PIN S
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 3.110 1.510 3.340 1.740 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 3.570 1.510 3.800 1.740 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 0.810 0.990 1.040 1.350 ;
+    END
+  END S
+  PIN B
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 4.490 1.510 4.720 1.740 ;
+        RECT 4.530 1.220 4.670 1.510 ;
+        RECT 4.490 0.990 4.720 1.220 ;
+    END
+  END B
+END MUX2X1
+END LIBRARY
+
