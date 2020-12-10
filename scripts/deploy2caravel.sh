@@ -1,3 +1,4 @@
+#!/bin/bash
 echo This script needs to be run from the StdCellLib/Catalog directory
 CARAVEL=/media/philipp/Daten/skywater/caravel-stdcelllib-stdcells
 
