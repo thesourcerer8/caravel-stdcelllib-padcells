@@ -26,7 +26,10 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 set ::env(CLOCK_PORT) ""
 #set ::env(CLOCK_NET) "counter.clk"
-#set ::env(CLOCK_PERIOD) "10"
+#set ::env(CLOCK_PERIOD) 10
+#set ::env(CLOCK_PORT) "io_in\[10\]"
+set ::env(CLOCK_PERIOD) 0
+set ::env(CLOCK_TREE_SYNTH) 0
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 300 300"
@@ -45,10 +48,6 @@ set ::env(FP_CORE_UTIL) 5
 #set ::env(FP_PDN_VPITCH) 15
 #set ::env(FP_PDN_HOFFSET) 4
 #set ::env(FP_PDN_HPITCH) 15
-
-set ::env(CLOCK_PORT) "io_in\[10\]"
-set ::env(CLOCK_PERIOD) 0
-set ::env(CLOCK_TREE_SYNTH) 0
 
 set ::env(PL_RANDOM_GLB_PLACEMENT) 1
 
