@@ -8,6 +8,7 @@ cp *.lib $CARAVEL/cells/lib/
 cp outputlib/*.lef $CARAVEL/cells/lef/orig/
 cp outputlib/*.gds $CARAVEL/cells/gds/
 cp *.mag $CARAVEL/cells/mag/
+rm $CARAVEL/cells/mag/demoboard.mag
 
 cd $CARAVEL/cells/lef
 perl fixup.pl
