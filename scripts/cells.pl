@@ -26,6 +26,7 @@ foreach my $mag(<$STDCELLLIB/Catalog/*.mag>)
   #print `ls -la $mag`;
   my $cell=$mag; $cell=~s/\.mag$/.cell/;
   my $name=""; $name=$1 if($mag=~m/([\w\-\.]+)\.mag$/);
+  next unless(-f $cell);
   open CELL,"<$cell";
   print "module $name(\n";
 
@@ -49,6 +50,7 @@ foreach my $mag(<$STDCELLLIB/Catalog/*.mag>)
     }
 
   }
+  close CELL;
   print "	inout vdd, // cell power supply\n";
   print "	inout gnd  // cell ground supply\n";
   print ");\n";

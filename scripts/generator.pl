@@ -64,6 +64,7 @@ foreach my $mag(<$STDCELLLIB/Catalog/*.mag>)
   #print `ls -la $mag`;
   my $cell=$mag; $cell=~s/\.mag$/.cell/;
   my $name=""; $name=$1 if($mag=~m/([\w\-\.]+)\.mag$/);
+  next unless(-f $cell);
   open CELL,"<$cell";
   print "$name $name(\n";
   print " `ifdef USE_POWER_PINS\n";
@@ -114,6 +115,7 @@ foreach my $mag(<$STDCELLLIB/Catalog/*.mag>)
     }
 
   }
+  close CELL;
   print ");\n";
 }
 print $conf;
