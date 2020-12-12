@@ -15,7 +15,7 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 2.530 4.600 2.920 ;
+        RECT 0.000 2.480 4.600 2.960 ;
     END
   END vdd
   PIN gnd
@@ -24,7 +24,7 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 -0.200 4.600 0.200 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
     END
   END gnd
   PIN Y
@@ -33,57 +33,50 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 1.270 1.900 1.500 2.130 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 0.350 0.790 0.580 0.830 ;
-        RECT 4.030 0.790 4.260 0.830 ;
-        RECT 0.350 0.650 4.260 0.790 ;
-        RECT 0.350 0.600 0.580 0.650 ;
-        RECT 4.030 0.600 4.260 0.650 ;
+        RECT 1.240 0.920 1.530 0.990 ;
+        RECT 0.390 0.860 4.210 0.920 ;
+        RECT 0.320 0.780 4.290 0.860 ;
+        RECT 0.320 0.570 0.610 0.780 ;
+        RECT 1.240 0.700 1.530 0.780 ;
+        RECT 4.000 0.570 4.290 0.780 ;
     END
   END Y
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met2 ;
-        RECT 1.730 0.990 1.960 1.350 ;
-    END
-  END C
   PIN B
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 3.570 1.510 3.800 1.740 ;
-        RECT 3.610 1.220 3.750 1.510 ;
-        RECT 3.570 0.990 3.800 1.220 ;
+        RECT 3.540 1.090 3.830 1.640 ;
     END
   END B
-  PIN D
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met2 ;
-        RECT 0.810 0.990 1.040 1.350 ;
-    END
-  END D
   PIN A
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 2.650 1.510 2.880 1.740 ;
-        RECT 2.690 1.220 2.830 1.510 ;
-        RECT 2.650 0.990 2.880 1.220 ;
+        RECT 2.620 1.090 2.910 1.640 ;
     END
   END A
+  PIN D
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.780 1.090 1.070 1.640 ;
+    END
+  END D
+  PIN C
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 1.700 1.090 1.990 1.640 ;
+    END
+  END C
 END AOI22X1
 END LIBRARY
 

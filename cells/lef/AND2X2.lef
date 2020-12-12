@@ -15,7 +15,7 @@ MACRO AND2X2
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 2.530 3.680 2.920 ;
+        RECT 0.000 2.480 3.680 2.960 ;
     END
   END vdd
   PIN gnd
@@ -24,7 +24,7 @@ MACRO AND2X2
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 -0.200 3.680 0.200 ;
+        RECT 0.000 -0.240 3.680 0.240 ;
     END
   END gnd
   PIN Y
@@ -33,31 +33,29 @@ MACRO AND2X2
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 3.110 1.900 3.340 2.130 ;
-        RECT 3.150 0.830 3.290 1.900 ;
-        RECT 3.110 0.600 3.340 0.830 ;
+        RECT 3.080 1.740 3.370 2.030 ;
+        RECT 3.150 0.860 3.290 1.740 ;
+        RECT 3.080 0.570 3.370 0.860 ;
     END
   END Y
-  PIN A
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met2 ;
-        RECT 0.810 1.510 1.040 1.740 ;
-        RECT 0.850 1.220 0.990 1.510 ;
-        RECT 0.810 0.990 1.040 1.220 ;
-    END
-  END A
   PIN B
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 1.730 1.510 1.960 1.740 ;
+        RECT 1.700 1.090 1.990 1.640 ;
     END
   END B
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 0.780 1.090 1.070 1.640 ;
+    END
+  END A
 END AND2X2
 END LIBRARY
 

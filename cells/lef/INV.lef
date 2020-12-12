@@ -15,7 +15,7 @@ MACRO INV
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 2.530 1.840 2.920 ;
+        RECT 0.000 2.480 1.840 2.960 ;
     END
   END vdd
   PIN gnd
@@ -24,7 +24,7 @@ MACRO INV
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 -0.200 1.840 0.200 ;
+        RECT 0.000 -0.240 1.840 0.240 ;
     END
   END gnd
   PIN Y
@@ -33,9 +33,9 @@ MACRO INV
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.350 1.900 0.580 2.130 ;
-        RECT 0.390 0.830 0.530 1.900 ;
-        RECT 0.350 0.600 0.580 0.830 ;
+        RECT 1.240 1.740 1.530 2.030 ;
+        RECT 1.310 0.860 1.450 1.740 ;
+        RECT 1.240 0.570 1.530 0.860 ;
     END
   END Y
   PIN A
@@ -44,9 +44,7 @@ MACRO INV
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.810 1.510 1.040 1.740 ;
-        RECT 0.850 1.220 0.990 1.510 ;
-        RECT 0.810 0.990 1.040 1.220 ;
+        RECT 0.780 1.090 1.070 1.640 ;
     END
   END A
 END INV

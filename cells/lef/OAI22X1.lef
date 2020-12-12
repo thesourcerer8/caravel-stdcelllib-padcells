@@ -15,7 +15,7 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 2.530 4.600 2.920 ;
+        RECT 0.000 2.480 4.600 2.960 ;
     END
   END vdd
   PIN gnd
@@ -24,7 +24,7 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 -0.200 4.600 0.200 ;
+        RECT 0.000 -0.240 4.600 0.240 ;
     END
   END gnd
   PIN Y
@@ -33,15 +33,15 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 4.030 1.900 4.260 2.130 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 0.350 1.900 0.580 2.130 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 1.270 0.600 1.500 0.830 ;
+        RECT 0.320 1.960 0.610 2.030 ;
+        RECT 4.000 1.960 4.290 2.030 ;
+        RECT 0.320 1.820 4.290 1.960 ;
+        RECT 0.320 1.740 0.610 1.820 ;
+        RECT 4.000 1.740 4.290 1.820 ;
+        RECT 3.080 0.790 3.370 0.860 ;
+        RECT 4.070 0.790 4.210 1.740 ;
+        RECT 3.080 0.650 4.210 0.790 ;
+        RECT 3.080 0.570 3.370 0.650 ;
     END
   END Y
   PIN B
@@ -50,9 +50,7 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 3.570 1.510 3.800 1.740 ;
-        RECT 3.610 1.220 3.750 1.510 ;
-        RECT 3.570 0.990 3.800 1.220 ;
+        RECT 0.780 1.090 1.070 1.640 ;
     END
   END B
   PIN D
@@ -61,7 +59,11 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.810 1.510 1.040 1.740 ;
+        RECT 3.540 1.350 3.830 1.640 ;
+    END
+    PORT
+      LAYER met2 ;
+        RECT 2.620 0.440 2.910 0.730 ;
     END
   END D
   PIN C
@@ -70,7 +72,7 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 1.730 1.510 1.960 1.740 ;
+        RECT 2.620 1.350 2.910 1.640 ;
     END
   END C
   PIN A
@@ -79,9 +81,7 @@ MACRO OAI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 2.650 1.510 2.880 1.740 ;
-        RECT 2.690 1.220 2.830 1.510 ;
-        RECT 2.650 0.990 2.880 1.220 ;
+        RECT 1.700 1.090 1.990 1.640 ;
     END
   END A
 END OAI22X1

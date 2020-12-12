@@ -15,7 +15,7 @@ MACRO CLKBUF1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 2.530 8.280 2.920 ;
+        RECT 0.000 2.480 8.280 2.960 ;
     END
   END vdd
   PIN gnd
@@ -24,7 +24,7 @@ MACRO CLKBUF1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 -0.200 8.280 0.200 ;
+        RECT 0.000 -0.240 8.280 0.240 ;
     END
   END gnd
   PIN Y
@@ -33,11 +33,13 @@ MACRO CLKBUF1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 6.790 1.900 7.020 2.130 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 6.790 0.600 7.020 0.830 ;
+        RECT 6.760 1.960 7.050 2.030 ;
+        RECT 6.760 1.820 7.890 1.960 ;
+        RECT 6.760 1.740 7.050 1.820 ;
+        RECT 7.750 0.920 7.890 1.820 ;
+        RECT 6.830 0.860 7.890 0.920 ;
+        RECT 6.760 0.780 7.890 0.860 ;
+        RECT 6.760 0.570 7.050 0.780 ;
     END
   END Y
   PIN A
@@ -46,15 +48,11 @@ MACRO CLKBUF1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.810 1.700 1.040 1.740 ;
-        RECT 1.730 1.700 1.960 1.740 ;
-        RECT 0.810 1.560 1.960 1.700 ;
-        RECT 0.810 1.510 1.040 1.560 ;
-        RECT 1.730 1.510 1.960 1.560 ;
-        RECT 0.850 1.220 0.990 1.510 ;
-        RECT 1.770 1.220 1.910 1.510 ;
-        RECT 0.810 0.990 1.040 1.220 ;
-        RECT 1.730 0.990 1.960 1.220 ;
+        RECT 0.780 1.570 1.070 1.640 ;
+        RECT 1.700 1.570 1.990 1.640 ;
+        RECT 0.780 1.430 1.990 1.570 ;
+        RECT 0.780 1.090 1.070 1.430 ;
+        RECT 1.700 1.090 1.990 1.430 ;
     END
   END A
 END CLKBUF1

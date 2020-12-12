@@ -15,7 +15,7 @@ MACRO HAX1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 2.530 9.200 2.920 ;
+        RECT 0.000 2.480 9.200 2.960 ;
     END
   END vdd
   PIN gnd
@@ -24,59 +24,54 @@ MACRO HAX1
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 0.000 -0.200 9.200 0.200 ;
+        RECT 0.000 -0.240 9.200 0.240 ;
     END
   END gnd
-  PIN YS
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met2 ;
-        RECT 8.630 1.900 8.860 2.130 ;
-        RECT 8.670 0.830 8.810 1.900 ;
-        RECT 8.630 0.600 8.860 0.830 ;
-    END
-  END YS
   PIN YC
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 1.270 1.900 1.500 2.130 ;
-    END
-    PORT
-      LAYER met2 ;
-        RECT 1.270 0.600 1.500 0.830 ;
+        RECT 0.320 1.740 0.610 2.030 ;
+        RECT 0.390 0.860 0.530 1.740 ;
+        RECT 0.320 0.570 0.610 0.860 ;
     END
   END YC
-  PIN A
+  PIN YS
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 3.570 1.700 3.800 1.740 ;
-        RECT 5.410 1.700 5.640 1.740 ;
-        RECT 3.570 1.560 5.640 1.700 ;
-        RECT 3.570 1.510 3.800 1.560 ;
-        RECT 5.410 1.510 5.640 1.560 ;
+        RECT 7.680 0.570 7.970 0.860 ;
     END
-  END A
+  END YS
   PIN B
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met2 ;
-        RECT 6.330 1.510 6.560 1.740 ;
+        RECT 2.620 1.180 2.910 1.640 ;
+        RECT 5.380 1.180 5.670 1.640 ;
+        RECT 2.620 1.090 5.670 1.180 ;
+        RECT 2.690 1.040 5.590 1.090 ;
+    END
+  END B
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met2 ;
+        RECT 6.300 1.090 6.590 1.640 ;
     END
     PORT
       LAYER met2 ;
-        RECT 2.650 1.510 2.880 1.740 ;
+        RECT 3.540 1.350 3.830 1.640 ;
     END
-  END B
+  END A
 END HAX1
 END LIBRARY
 
