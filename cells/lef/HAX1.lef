@@ -14,7 +14,7 @@ MACRO HAX1
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 9.200 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO HAX1
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 9.200 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO HAX1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.320 1.740 0.610 2.030 ;
         RECT 0.390 0.860 0.530 1.740 ;
         RECT 0.320 0.570 0.610 0.860 ;
@@ -43,7 +43,7 @@ MACRO HAX1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 7.680 0.570 7.970 0.860 ;
     END
   END YS
@@ -52,7 +52,7 @@ MACRO HAX1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 2.620 1.180 2.910 1.640 ;
         RECT 5.380 1.180 5.670 1.640 ;
         RECT 2.620 1.090 5.670 1.180 ;
@@ -64,11 +64,11 @@ MACRO HAX1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 6.300 1.090 6.590 1.640 ;
     END
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 3.540 1.350 3.830 1.640 ;
     END
   END A

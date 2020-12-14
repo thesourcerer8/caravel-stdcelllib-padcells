@@ -14,7 +14,7 @@ MACRO BUFX2
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 2.760 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO BUFX2
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 2.760 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO BUFX2
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 2.160 1.740 2.450 2.030 ;
         RECT 2.230 0.860 2.370 1.740 ;
         RECT 2.160 0.570 2.450 0.860 ;
@@ -43,7 +43,7 @@ MACRO BUFX2
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 0.960 1.070 1.250 ;
     END
   END A

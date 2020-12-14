@@ -14,7 +14,7 @@ MACRO AOI22X1
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 4.600 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO AOI22X1
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 4.600 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO AOI22X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 1.240 0.920 1.530 0.990 ;
         RECT 0.390 0.860 4.210 0.920 ;
         RECT 0.320 0.780 4.290 0.860 ;
@@ -46,7 +46,7 @@ MACRO AOI22X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 3.540 1.090 3.830 1.640 ;
     END
   END B
@@ -55,7 +55,7 @@ MACRO AOI22X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 2.620 1.090 2.910 1.640 ;
     END
   END A
@@ -64,7 +64,7 @@ MACRO AOI22X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 1.090 1.070 1.640 ;
     END
   END D
@@ -73,7 +73,7 @@ MACRO AOI22X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 1.700 1.090 1.990 1.640 ;
     END
   END C

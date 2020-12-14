@@ -14,7 +14,7 @@ MACRO INVX8
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 4.600 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO INVX8
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 4.600 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO INVX8
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.320 1.960 0.610 2.030 ;
         RECT 2.160 1.960 2.450 2.030 ;
         RECT 4.000 1.960 4.290 2.030 ;
@@ -55,7 +55,7 @@ MACRO INVX8
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 1.310 1.070 1.640 ;
         RECT 1.700 1.310 1.990 1.640 ;
         RECT 2.620 1.310 2.910 1.640 ;

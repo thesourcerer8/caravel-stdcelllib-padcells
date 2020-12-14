@@ -14,7 +14,7 @@ MACRO NOR3X1
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 6.440 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO NOR3X1
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 6.440 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO NOR3X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.320 1.740 0.610 2.030 ;
         RECT 5.840 1.740 6.130 2.030 ;
         RECT 0.390 0.920 0.530 1.740 ;
@@ -47,7 +47,7 @@ MACRO NOR3X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 2.620 1.310 2.910 1.380 ;
         RECT 3.540 1.310 3.830 1.510 ;
         RECT 2.620 1.220 3.830 1.310 ;
@@ -60,11 +60,11 @@ MACRO NOR3X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 4.460 1.350 4.750 1.640 ;
     END
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 1.700 1.090 1.990 1.640 ;
     END
   END B
@@ -73,11 +73,11 @@ MACRO NOR3X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 5.380 1.350 5.670 1.640 ;
     END
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 1.090 1.070 1.640 ;
     END
   END C

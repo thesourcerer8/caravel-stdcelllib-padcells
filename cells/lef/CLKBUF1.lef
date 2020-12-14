@@ -14,7 +14,7 @@ MACRO CLKBUF1
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 8.280 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO CLKBUF1
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 8.280 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO CLKBUF1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 6.760 1.960 7.050 2.030 ;
         RECT 6.760 1.820 7.890 1.960 ;
         RECT 6.760 1.740 7.050 1.820 ;
@@ -47,7 +47,7 @@ MACRO CLKBUF1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 1.570 1.070 1.640 ;
         RECT 1.700 1.570 1.990 1.640 ;
         RECT 0.780 1.430 1.990 1.570 ;

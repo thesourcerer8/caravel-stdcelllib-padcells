@@ -14,7 +14,7 @@ MACRO BUFX4
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 3.680 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO BUFX4
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 3.680 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO BUFX4
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 2.160 1.960 2.450 2.030 ;
         RECT 2.160 1.820 3.290 1.960 ;
         RECT 2.160 1.740 2.450 1.820 ;
@@ -47,7 +47,7 @@ MACRO BUFX4
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 0.960 1.070 1.250 ;
     END
   END A

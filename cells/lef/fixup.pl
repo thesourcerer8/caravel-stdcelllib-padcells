@@ -15,7 +15,7 @@ foreach my $lef (<orig/*.lef>)
     s/SYMMETRY X Y R90/SITE unithd/;
     s/SITE CORE/SYMMETRY X Y R90/;
     #s/SITE unithd.*//;
-    s/metal2/met2/;
+    s/metal2/met1/;
     s/VDD/vdd/;
     s/GND/gnd/;
     s/USE SIGNAL/USE POWER/ if($pin eq "VDD");

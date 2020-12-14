@@ -14,7 +14,7 @@ MACRO AND2X1
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 2.480 3.680 2.960 ;
     END
   END vdd
@@ -23,7 +23,7 @@ MACRO AND2X1
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.000 -0.240 3.680 0.240 ;
     END
   END gnd
@@ -32,7 +32,7 @@ MACRO AND2X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 3.080 1.740 3.370 2.030 ;
         RECT 3.150 0.860 3.290 1.740 ;
         RECT 3.080 0.570 3.370 0.860 ;
@@ -43,7 +43,7 @@ MACRO AND2X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 1.700 1.090 1.990 1.640 ;
     END
   END B
@@ -52,7 +52,7 @@ MACRO AND2X1
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER met2 ;
+      LAYER met1 ;
         RECT 0.780 1.090 1.070 1.640 ;
     END
   END A
