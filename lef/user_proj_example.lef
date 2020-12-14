@@ -4253,7 +4253,7 @@ MACRO user_proj_example
   END VGND
   OBS
       LAYER li1 ;
-        RECT 5.430 10.795 294.310 295.715 ;
+        RECT 5.430 10.795 294.310 288.405 ;
       LAYER met1 ;
         RECT 0.900 4.460 298.840 295.760 ;
       LAYER met2 ;
@@ -4534,9 +4534,9 @@ MACRO user_proj_example
         RECT 295.880 4.000 295.960 4.280 ;
         RECT 297.720 4.000 297.800 4.280 ;
       LAYER met3 ;
-        RECT 20.950 4.255 272.165 288.485 ;
+        RECT 18.835 4.255 275.845 288.485 ;
       LAYER met4 ;
-        RECT 46.205 10.640 97.350 288.560 ;
+        RECT 82.085 10.640 97.350 288.560 ;
         RECT 99.750 10.640 252.950 288.560 ;
   END
 END user_proj_example
