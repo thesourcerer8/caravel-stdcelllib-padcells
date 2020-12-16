@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (HAX1) {
-    area: 295040.0;
+    area: 323840.0;
     cell_leakage_power: 0.1173;
     pin (B) {
       capacitance: 0.00529184758081528;

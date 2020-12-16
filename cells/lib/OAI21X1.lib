@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (OAI21X1) {
-    area: 118400.0;
+    area: 117760.0;
     cell_leakage_power: 0.1173;
     pin (C) {
       capacitance: 0.003753568099521076;

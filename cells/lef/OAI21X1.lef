@@ -33,13 +33,13 @@ MACRO OAI21X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 0.320 1.960 0.610 2.030 ;
-        RECT 3.080 1.960 3.370 2.030 ;
-        RECT 0.320 1.820 3.370 1.960 ;
-        RECT 0.320 1.740 0.610 1.820 ;
-        RECT 3.080 1.740 3.370 1.820 ;
-        RECT 3.150 0.860 3.290 1.740 ;
-        RECT 3.080 0.570 3.370 0.860 ;
+        RECT 0.320 2.230 0.610 2.310 ;
+        RECT 3.080 2.230 3.370 2.310 ;
+        RECT 0.320 2.090 3.370 2.230 ;
+        RECT 0.320 2.020 0.610 2.090 ;
+        RECT 3.080 2.020 3.370 2.090 ;
+        RECT 0.390 0.690 0.530 2.020 ;
+        RECT 0.320 0.400 0.610 0.690 ;
     END
   END Y
   PIN C
@@ -48,7 +48,9 @@ MACRO OAI21X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 2.620 1.090 2.910 1.640 ;
+        RECT 0.780 1.480 1.070 1.770 ;
+        RECT 0.850 1.230 0.990 1.480 ;
+        RECT 0.780 0.940 1.070 1.230 ;
     END
   END C
   PIN B
@@ -57,7 +59,9 @@ MACRO OAI21X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 0.780 1.090 1.070 1.640 ;
+        RECT 2.620 1.480 2.910 1.770 ;
+        RECT 2.690 1.230 2.830 1.480 ;
+        RECT 2.620 0.940 2.910 1.230 ;
     END
   END B
   PIN A
@@ -66,7 +70,9 @@ MACRO OAI21X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 1.700 1.090 1.990 1.640 ;
+        RECT 1.700 1.480 1.990 1.770 ;
+        RECT 1.770 1.230 1.910 1.480 ;
+        RECT 1.700 0.940 1.990 1.230 ;
     END
   END A
 END OAI21X1

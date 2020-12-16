@@ -33,9 +33,9 @@ MACRO AND2X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 3.080 1.740 3.370 2.030 ;
-        RECT 3.150 0.860 3.290 1.740 ;
-        RECT 3.080 0.570 3.370 0.860 ;
+        RECT 3.080 2.020 3.370 2.310 ;
+        RECT 3.150 0.690 3.290 2.020 ;
+        RECT 3.080 0.400 3.370 0.690 ;
     END
   END Y
   PIN B
@@ -44,7 +44,7 @@ MACRO AND2X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 1.700 1.090 1.990 1.640 ;
+        RECT 1.700 0.940 1.990 1.230 ;
     END
   END B
   PIN A
@@ -53,7 +53,9 @@ MACRO AND2X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 0.780 1.090 1.070 1.640 ;
+        RECT 0.780 1.480 1.070 1.770 ;
+        RECT 0.850 1.230 0.990 1.480 ;
+        RECT 0.780 0.940 1.070 1.230 ;
     END
   END A
 END AND2X1

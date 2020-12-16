@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (BUFX4) {
-    area: 118400.0;
+    area: 117760.0;
     cell_leakage_power: 0.1173;
     pin (A) {
       capacitance: 0.004124291857536497;

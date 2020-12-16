@@ -33,12 +33,12 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 1.240 0.920 1.530 0.990 ;
-        RECT 0.390 0.860 4.210 0.920 ;
-        RECT 0.320 0.780 4.290 0.860 ;
-        RECT 0.320 0.570 0.610 0.780 ;
-        RECT 1.240 0.700 1.530 0.780 ;
-        RECT 4.000 0.570 4.290 0.780 ;
+        RECT 1.240 0.790 1.530 0.870 ;
+        RECT 0.390 0.690 4.210 0.790 ;
+        RECT 0.320 0.650 4.290 0.690 ;
+        RECT 0.320 0.400 0.610 0.650 ;
+        RECT 1.240 0.580 1.530 0.650 ;
+        RECT 4.000 0.400 4.290 0.650 ;
     END
   END Y
   PIN B
@@ -47,7 +47,9 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 3.540 1.090 3.830 1.640 ;
+        RECT 3.540 1.480 3.830 1.770 ;
+        RECT 3.610 1.230 3.750 1.480 ;
+        RECT 3.540 0.940 3.830 1.230 ;
     END
   END B
   PIN A
@@ -56,7 +58,9 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 2.620 1.090 2.910 1.640 ;
+        RECT 2.620 1.480 2.910 1.770 ;
+        RECT 2.690 1.230 2.830 1.480 ;
+        RECT 2.620 0.940 2.910 1.230 ;
     END
   END A
   PIN D
@@ -65,7 +69,9 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 0.780 1.090 1.070 1.640 ;
+        RECT 0.780 1.480 1.070 1.770 ;
+        RECT 0.850 1.230 0.990 1.480 ;
+        RECT 0.780 0.940 1.070 1.230 ;
     END
   END D
   PIN C
@@ -74,7 +80,9 @@ MACRO AOI22X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 1.700 1.090 1.990 1.640 ;
+        RECT 1.700 1.480 1.990 1.770 ;
+        RECT 1.770 1.230 1.910 1.480 ;
+        RECT 1.700 0.940 1.990 1.230 ;
     END
   END C
 END AOI22X1

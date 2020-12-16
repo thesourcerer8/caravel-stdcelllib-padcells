@@ -33,31 +33,24 @@ MACRO NAND3X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 0.320 1.960 0.610 2.030 ;
-        RECT 2.160 1.960 2.450 2.030 ;
-        RECT 0.320 1.820 2.450 1.960 ;
-        RECT 0.320 1.740 0.610 1.820 ;
-        RECT 2.160 1.740 2.450 1.820 ;
-        RECT 0.390 0.860 0.530 1.740 ;
-        RECT 0.320 0.570 0.610 0.860 ;
+        RECT 0.320 2.230 0.610 2.310 ;
+        RECT 2.160 2.230 2.450 2.310 ;
+        RECT 0.320 2.090 2.450 2.230 ;
+        RECT 0.320 2.020 0.610 2.090 ;
+        RECT 2.160 2.020 2.450 2.090 ;
+        RECT 0.390 0.690 0.530 2.020 ;
+        RECT 0.320 0.400 0.610 0.690 ;
     END
   END Y
-  PIN C
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met1 ;
-        RECT 0.780 1.090 1.070 1.640 ;
-    END
-  END C
   PIN B
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 1.700 1.090 1.990 1.640 ;
+        RECT 1.700 1.480 1.990 1.770 ;
+        RECT 1.770 1.230 1.910 1.480 ;
+        RECT 1.700 0.940 1.990 1.230 ;
     END
   END B
   PIN A
@@ -66,9 +59,22 @@ MACRO NAND3X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 2.620 1.090 2.910 1.640 ;
+        RECT 2.620 1.480 2.910 1.770 ;
+        RECT 2.690 1.230 2.830 1.480 ;
+        RECT 2.620 0.940 2.910 1.230 ;
     END
   END A
+  PIN C
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0.780 1.480 1.070 1.770 ;
+        RECT 0.850 1.230 0.990 1.480 ;
+        RECT 0.780 0.940 1.070 1.230 ;
+    END
+  END C
 END NAND3X1
 END LIBRARY
 

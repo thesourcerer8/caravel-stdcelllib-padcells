@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (CLKBUF1) {
-    area: 265600.0;
+    area: 264960.0;
     cell_leakage_power: 0.1173;
     pin (A) {
       capacitance: 0.0082483723892764;

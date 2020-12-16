@@ -33,39 +33,32 @@ MACRO NOR3X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 0.320 1.740 0.610 2.030 ;
-        RECT 5.840 1.740 6.130 2.030 ;
-        RECT 0.390 0.920 0.530 1.740 ;
-        RECT 5.910 0.920 6.050 1.740 ;
-        RECT 0.390 0.780 6.050 0.920 ;
-        RECT 1.240 0.570 1.530 0.780 ;
-        RECT 3.080 0.570 3.370 0.780 ;
+        RECT 5.840 2.020 6.130 2.310 ;
     END
-  END Y
-  PIN A
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 2.620 1.310 2.910 1.380 ;
-        RECT 3.540 1.310 3.830 1.510 ;
-        RECT 2.620 1.220 3.830 1.310 ;
-        RECT 2.620 1.170 3.750 1.220 ;
-        RECT 2.620 1.090 2.910 1.170 ;
+        RECT 0.320 2.020 0.610 2.310 ;
+        RECT 0.390 0.690 0.530 2.020 ;
+        RECT 0.320 0.610 0.610 0.690 ;
+        RECT 2.160 0.610 2.450 0.690 ;
+        RECT 0.320 0.470 2.450 0.610 ;
+        RECT 0.320 0.400 0.610 0.470 ;
+        RECT 2.160 0.400 2.450 0.470 ;
     END
-  END A
+  END Y
   PIN B
     DIRECTION INOUT ;
     USE SIGNAL ;
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 4.460 1.350 4.750 1.640 ;
+        RECT 4.460 1.480 4.750 1.770 ;
     END
     PORT
       LAYER met1 ;
-        RECT 1.700 1.090 1.990 1.640 ;
+        RECT 1.700 1.480 1.990 1.770 ;
+        RECT 1.770 1.230 1.910 1.480 ;
+        RECT 1.700 0.940 1.990 1.230 ;
     END
   END B
   PIN C
@@ -74,13 +67,32 @@ MACRO NOR3X1
     SHAPE ABUTMENT ;
     PORT
       LAYER met1 ;
-        RECT 5.380 1.350 5.670 1.640 ;
+        RECT 0.780 1.480 1.070 1.770 ;
     END
     PORT
       LAYER met1 ;
-        RECT 0.780 1.090 1.070 1.640 ;
+        RECT 0.780 0.940 1.070 1.230 ;
+    END
+    PORT
+      LAYER met1 ;
+        RECT 5.380 1.480 5.670 1.770 ;
     END
   END C
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 2.620 1.690 2.910 1.770 ;
+        RECT 3.540 1.690 3.830 1.770 ;
+        RECT 2.620 1.550 3.830 1.690 ;
+        RECT 2.620 1.480 2.910 1.550 ;
+        RECT 3.540 1.480 3.830 1.550 ;
+        RECT 2.690 1.230 2.830 1.480 ;
+        RECT 2.620 0.940 2.910 1.230 ;
+    END
+  END A
 END NOR3X1
 END LIBRARY
 

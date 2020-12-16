@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (INVX2) {
-    area: 59520.0;
+    area: 58880.0;
     cell_leakage_power: 0.1173;
     pin (A) {
       capacitance: 0.004124138007812648;

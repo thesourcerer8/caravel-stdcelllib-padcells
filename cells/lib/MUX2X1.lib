@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (MUX2X1) {
-    area: 1.0;
+    area: 176640.0;
     cell_leakage_power: 0.1173;
     pin (S) {
       capacitance: 0.006332708533105211;

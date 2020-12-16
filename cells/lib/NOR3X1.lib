@@ -179,7 +179,7 @@ library (ls05_stdcells) {
     variable_2: constrained_pin_transition;
   }
   cell (NOR3X1) {
-    area: 206720.0;
+    area: 206080.0;
     cell_leakage_power: 0.1173;
     pin (C) {
       capacitance: 0.0038837474809661878;
