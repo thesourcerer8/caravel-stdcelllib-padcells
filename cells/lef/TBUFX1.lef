@@ -1,0 +1,65 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO TBUFX1
+  CLASS CORE ;
+  FOREIGN TBUFX1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.680 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 2.480 3.680 2.960 ;
+    END
+  END vdd
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.680 0.240 ;
+    END
+  END gnd
+  PIN Y
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 3.080 2.020 3.370 2.310 ;
+        RECT 3.150 0.690 3.290 2.020 ;
+        RECT 3.080 0.400 3.370 0.690 ;
+    END
+  END Y
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 1.700 1.300 1.990 1.590 ;
+    END
+  END A
+  PIN EN
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0.780 1.150 1.070 1.590 ;
+        RECT 2.620 1.150 2.910 1.230 ;
+        RECT 0.780 1.010 2.910 1.150 ;
+        RECT 0.780 0.940 1.070 1.010 ;
+        RECT 2.620 0.940 2.910 1.010 ;
+    END
+  END EN
+END TBUFX1
+END LIBRARY
+
