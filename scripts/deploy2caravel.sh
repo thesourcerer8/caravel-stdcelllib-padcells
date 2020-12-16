@@ -22,6 +22,7 @@ perl $CARAVEL/scripts/cells.pl >$CARAVEL/verilog/rtl/user_proj_cells.v
 perl $CARAVEL/scripts/placement.pl >$CARAVEL/openlane/user_proj_example/macro_placement.cfg
 
 cd $CARAVEL/openlane
-make user_proj_example
+bash my.sh
+#make user_proj_example
 
 echo "Deployment done.";
