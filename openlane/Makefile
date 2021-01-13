@@ -87,6 +87,17 @@ strace:
 	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
 	$(OPENLANE_IMAGE_NAME) sh -c $(OPENLANE_STRACE_COMMAND);\
 
+magic:	
+	docker run --cap-add=SYS_PTRACE -it -v $(OPENLANE_ROOT):/openLANE_flow \
+	-v $(PDK_ROOT):$(PDK_ROOT) \
+	-v $(PWD)/..:/project \
+	-e PDK_ROOT=$(PDK_ROOT) \
+	-e DISPLAY=$(DISPLAY) \
+	-v /tmp/.X11-unix:/tmp/.X11-unix \
+	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
+	$(OPENLANE_IMAGE_NAME) sh -c magic ;\
+
+
 FORCE:
 
 clean: 
