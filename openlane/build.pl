@@ -60,9 +60,10 @@ else
     print "$_\n";
 
     print OUT "<h2>Submodule: $_</h2>\n<pre>";
-    foreach my $log(<$_/runs/$_/logs/*.log>,<$_/runs/$_/logs/*/*.log>)
+    foreach my $log(sort { -C $b <=> -C $a } <$_/runs/$_/logs/*.log>,<$_/runs/$_/logs/*/*.log>)
     {
       print OUT "<h3>$log</h3>\n";
+      #print OUT "Date: ".(-C $log)."\n";
       my $res=readfile($log);
       processfile($res);
     }
